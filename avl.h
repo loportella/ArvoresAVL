@@ -1,0 +1,20 @@
+struct arvoreavl{
+	int n;
+	int h;
+	struct arvoreavl *esq;
+	struct arvoreavl *dir;
+};
+typedef struct arvoreavl *avl;
+avl cria();
+avl dados();
+int maior(int a,int b);
+int altura(avl a);
+avl direita(avl a);
+avl esquerda(avl a);
+avl esqdir(avl a);
+avl diresq(avl a);
+avl insere(avl a,avl dado);
+void preord(avl a,FILE *f);
+void simet(avl a,FILE *f);
+void posord(avl a,FILE *f);
+void busca(avl a,int val);
